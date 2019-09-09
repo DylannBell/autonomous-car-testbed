@@ -124,8 +124,11 @@ class Display():
 				except Exception as e:
 					print(str(e))
 					
-			for waypoint in world_data['waypoints']:
-				pygame.draw.circle(self.screen, (256, 0, 0), waypoint, 10, 1)
+			for wpoint in world_data['waypoints']:
+				try:
+					if wpoint is None:
+						continue
+					pygame.draw.circle(self.screen, (256, 0, 0), wpoint, 10, 1)
 				
 
 	def error_message(self, message):
