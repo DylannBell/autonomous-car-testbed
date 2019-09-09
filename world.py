@@ -5,11 +5,11 @@ msgHeader = "[WORLD]: "
 
 
 class World():
-	def __init__(self, agents, vehicles, map, waypoints):
+	def __init__(self, agents, vehicles, chosen_map, waypoints):
 		self.world_data = {'agents': agents,
 						   'vehicles': vehicles,
 						   'dimensions': (DISPLAY_WIDTH, DISPLAY_HEIGHT),
-						   'map': map,
+						   'map': chosen_map,
 						   'waypoints': waypoints}
 		print(msgHeader + "Initialisation complete.")
 
