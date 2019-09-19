@@ -10,7 +10,6 @@ msgHeader = "[DISPLAY]: "
 
 
 class Display():
-		self.background_image = None
     def __init__(self):
         self.DEBUG = False
 
