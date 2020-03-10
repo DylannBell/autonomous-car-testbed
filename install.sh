@@ -1,0 +1,1 @@
+sudo pip3 install pygame && pip3 install bluetooth && pip3 install pybluez && sudo apt-get update && sudo apt-get upgrade && sudo apt-get install python-dev && sudo apt-get install libqt4-dev && sudo apt-get install python-qt4 && sudo apt-get install libbluetooth-dev

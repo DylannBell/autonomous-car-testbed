@@ -1,6 +1,7 @@
 import time
 from zenwheels.protocol import *
 
+msgHeader = " [VEHICLE]: "
 
 class Vehicle:
 	def __init__(self, owner):
@@ -22,6 +23,7 @@ class Vehicle:
 		self.headlights_active = False
 		self.left_signal_active = False
 		self.right_signal_active = False
+		self.police_siren_active = False
 
 		# List of commands to be sent to the corresponding ZenWheels car.
 		self.command_queue = {}
@@ -98,6 +100,16 @@ class Vehicle:
 		if self.right_signal_active == True:
 			self.queueCommand(bytes([RIGHT_SIGNAL, SIGNAL_OFF]))
 			self.right_signal_active = False
+			
+	def police_siren_on(self):
+		if self.police_siren_active == False:
+			self.queueCommand(bytes([EFFECTS, EFFECTS_POLICE_HILO]))
+			self.police_siren_active = True
+			
+	def police_siren_off(self):
+		if self.police_siren_active == True:
+			self.queueCommand(bytes([EFFECTS, EFFECTS_OFF]))
+			self.police_siren_active = False
 
 	def queueCommand(self, command):
 		self.command_queue[command] = int(round(time.time() * 1000))  # Append time of queueing in milliseconds.

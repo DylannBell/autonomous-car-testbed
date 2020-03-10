@@ -160,6 +160,11 @@ class Agent():
 		joystick = pygame.joystick.Joystick(0)
 		prev_axes = (0, 0) # Use to check if axis input has been made
 		prev_buttons =  (0, 0, 0, 0, 0, 0, 0, 0)# Use to check if button has been pressed
+		left_signal = False
+		right_signal = False
+		horn = False
+		headlights = False
+		siren = False
 		while True:
 			if self.stopped:
 				return
@@ -190,30 +195,40 @@ class Agent():
 						self.vehicle.stop()
 					prev_axes = axes
 				if buttons != prev_buttons:
-					if X and not self.vehicle.horn_active:	# X activates horn
+					if X and not horn:	# X activates horn
 						self.vehicle.horn_on()
-					if not X and self.vehicle.horn_active:	# Deactivate horn when X is released
+						horn = True
+					if not X and horn:	# Deactivate horn when X is released
 						self.vehicle.horn_off()
+						horn = False
 					if left_bumper: # Left bumper toggles left indicator
-						if self.vehicle.left_signal_active:
+						if left_signal:
 							self.vehicle.left_signal_off()
+							left_signal = False
 						else:
 							self.vehicle.left_signal_on()
+							left_signal = True
 					if right_bumper: # Right bumper toggles right indicator
-						if self.vehicle.right_signal_active:
+						if right_signal:
 							self.vehicle.right_signal_off()
+							right_signal = False
 						else:
 							self.vehicle.right_signal_on()
+							right_signal = True
 					if Y: # Y toggles headlights
-						if self.vehicle.headlights_active:
+						if headlights:
 							self.vehicle.headlights_off()
+							headlights = False
 						else:
 							self.vehicle.headlights_on()
+							headlights = True
 					if B: # B toggles police siren
-						if self.vehicle.police_siren_active:
+						if siren:
 							self.vehicle.police_siren_off()
+							siren = False
 						else:
 							self.vehicle.police_siren_on()
+							siren = True
 
 def import_file(full_name, path):
 	from importlib import util

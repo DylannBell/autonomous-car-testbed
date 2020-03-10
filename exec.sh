@@ -1,0 +1,1 @@
+cd ~/Desktop/CITS3200_AutonomousCar-final && python3 main.py

@@ -1,6 +1,7 @@
 from tracker.core import *
 from tracker.camera import Camera
 from tracker.blob_detector import BlobDetector
+from tracker.cone_detector import ConeDetector
 from tracker.calibrator import Calibrator
 from tracker.mosse_tracker import MOSSETracker
 from multiprocessing import Process, Manager
@@ -17,6 +18,19 @@ class Vision():
 		manager = Manager()
 		self.shared_dict = manager.dict()
 		self.worker = None
+		
+	def getCones(self):
+		cd = ConeDetector()
+		image = self.cam.get_frame()
+		conesKey = cd.findCones(image)
+
+		cones = []
+
+		for keypoint in conesKey:
+			pos = (int(keypoint.pt[0]), int(keypoint.pt[1]))
+			cones.append(pos)
+
+		return cones
 
 	def identify(self, agents):
 		entities_in_scene = []

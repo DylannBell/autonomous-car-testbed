@@ -89,7 +89,8 @@ if __name__ == "__main__":
 				cone_detector = ConeDetector()
 				if display.wait_for_confirmation():
 					display.cone_recognition_screen()
-					cones = vision.getCones()
+					frame = vision.cam.get_frame()
+					cones = cone_detector.findCones(frame)
 					newWaypoints = []
 					conePairs = []
 					# Track-Building Algorithm
@@ -103,29 +104,9 @@ if __name__ == "__main__":
 								minDist = currentDist
 								pairedIndex = cones.index(posPair)
 						conePairs.append((currentCone, cones[pairedIndex]))
-						newWaypoints.append((round((currentCone[0] + cones[pairedIndex][0])/2*1.6), round((currentCone[1] + cones[pairedIndex][1])/2*1.6)))
+						newWaypoints.append(((float(currentCone[0]) + cones[pairedIndex][0])/2, (float(currentCone[1]) + cones[pairedIndex][1])/2))
 						cones.pop(pairedIndex)
-					newWaypoints.sort(key=lambda x: x[0])
-					new_newWaypoints = []  # 新list
-
-					while newWaypoints:  # newWaypoints不为空
-						if len(new_newWaypoints) == 0:
-							# 从第一个坐标A开始，放进新list
-							point = newWaypoints.pop(0)
-							new_newWaypoints.append(point)
-						else:
-							last_point = new_newWaypoints[-1]  # 上一个点A
-
-							min_distance, min_point = 1e10, None
-							for point in newWaypoints:  # 遍历newWaypoints，找到和上一个点A距离最小的点B min_point
-								this_distance = (point[0] - last_point[0]) ** 2 + (point[1] - last_point[1]) ** 2
-								if this_distance < min_distance:
-									min_distance = this_distance
-									min_point = point
-
-							new_newWaypoints.append(min_point)  # 找到与A最近的坐标B，放进新list
-							newWaypoints.remove(min_point)  # 从Newwaypoints里删除坐标B
-					display.add_waypoints(new_newWaypoints, scenario_config) # Add new waypoints to scenario_config
+					display.add_waypoints(newWaypoints, scenario_config) # Add new waypoints to scenario_config
 					world = World(agents, vehicles, scenario_config["Map"]["Image"], scenario_config["Map"]["Waypoints"]) # Update world
 				else:
 					continue
@@ -137,12 +118,8 @@ if __name__ == "__main__":
 			display.connecting_screen()
 			success = comms.connectToCars(vehicles)
 			if not success:
-				errorMsg = msgHeader + "Could not connect to cars."
-				print(errorMsg)
-				display.error_message(errorMsg)
-				time.sleep(2)
-				continue # Go back to main menu after 2 seconds
-			
+				break
+
 			# Identify car locations.
 			display.identifying_screen(agents)
 			success = vision.identify(agents)
@@ -188,10 +165,7 @@ if __name__ == "__main__":
 				
 				if display.race_complete:
 					######## Do something when the race is finished - e.g. splash screen showing lap times, leaderboard, etc. #########
-					display.race_complete = False
-					display.race_started = False
-					time.sleep(3)
-					break;
+					pass
 
 				for agent in agents:
 					agent.update_world_knowledge(world.get_world_data())

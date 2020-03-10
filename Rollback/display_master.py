@@ -17,7 +17,7 @@ class Display():
         self.DEBUG = False
 
         pygame.init()
-        self.screen = pygame.display.set_mode((DISPLAY_WIDTH, DISPLAY_HEIGHT), pygame.FULLSCREEN)
+        self.screen = pygame.display.set_mode((DISPLAY_WIDTH, DISPLAY_HEIGHT), pygame.RESIZABLE)
         self.background_image = None
         self.default_text_position = (DISPLAY_WIDTH / 1.5, DISPLAY_HEIGHT / 1.2)
         self.font_general = pygame.font.SysFont('Arial', int(DISPLAY_WIDTH / 50)) # Font for general text
@@ -167,7 +167,7 @@ class Display():
                 try:
                     if wp is None:
                         continue
-                    pygame.draw.circle(self.screen, (255,0,0), wp, 10, 1)
+                    pygame.draw.circle(self.screen, (0,0,0), wp, 10, 1)
                 except Exception as e:
                     print(str(e))
 
@@ -388,6 +388,8 @@ class Display():
                             start = True
                         elif buttons[hovering_on].is_exit:
                             exit = True
+                        elif buttons[hovering_on].is_UI:
+                            UI = True
                     elif event.key == K_ESCAPE: # ESC functions the same as gamepad B
                         buttons[hovering_on].B()
                         
