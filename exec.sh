@@ -1,1 +1,1 @@
-cd ~/Desktop/CITS3200_AutonomousCar-final && python3 main.py
+cd ~/Desktop/autonomous-car-testbed/src && python3 main.py
