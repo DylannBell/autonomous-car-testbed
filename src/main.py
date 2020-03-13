@@ -19,6 +19,20 @@ if __name__ == "__main__":
 	print("========================================")
 	print("")
 
+	## SETUP USING ARGS
+	timing = False
+	args = sys.argv
+	if lens(args) > 1:
+
+		# Run timing
+		if argv[1] == "timing":
+			timing = True
+			timingString = ''
+		
+		if argv[1] == "nogui":
+			assert(len(args) == 3), "Please add a single car number!"
+
+
 	# Initialise display.
 	display = Display()
 	# Display splash screen.
@@ -172,16 +186,36 @@ if __name__ == "__main__":
 			laps = []
 			laps.append(start_time) # Store current time as lap 0
 			display.race_started = True
+
+			updates = 0
 			while True:
+
+				# Time get car locations
+				startTimeCarLocations = datetime.datetime.now()
 				car_locations = vision.get_car_locations()
 				world.update(car_locations)
+				now = datetime.datetime.now()
+				s += "\nCar locations time : "
+				s += (startTimeCarLocations - now).total_seconds()
+
+				# Time lap
+				startTimeLap = datetime.datetime.now()
 				if display.lap: # If a lap has been completed, get the current time and store it as the next lap
 					dt_time = dt.now().time()
 					current_time = datetime.timedelta(seconds=dt_time.second, milliseconds=dt_time.microsecond/1000, 
 											minutes=dt_time.minute, hours=dt_time.hour)
 					laps.append(current_time - start_time)
+				now = datetime.datetime.now()
+				s += "\nLap time : "
+				s += (startTimeLap - now).total_seconds()
+
+				# Time display
+				startTimeDisplay = datetime.datetime.now()
 				display.lap = False # Reset lap trigger
 				display.update(world.get_world_data(), laps)
+				now = datetime.datetime.now()
+				s += "\nDisplay time : "
+				s += (startTimeDisplay - now).total_seconds()
 				
 				if display.done:
 					break
@@ -191,10 +225,26 @@ if __name__ == "__main__":
 					display.race_complete = False
 					display.race_started = False
 					time.sleep(3)
-					break;
+					break
 
+				# Time update agents
+				startTimeAgent = datetime.datetime.now()
 				for agent in agents:
 					agent.update_world_knowledge(world.get_world_data())
+				now = datetime.datetime.now()
+				s += "\nAgent time : "
+				s += (startTimeAgent - now).total_seconds()
+			
+				# Do timing
+				if timing:
+					timingFile = open("logs/timing.txt", "a+")
+					endTime = datetime.datetime.now()
+					s += "Timing update lap " + str(updates) + " complete."
+					f.write(s)
+					s= ""
+
+				updates += 1
+
 			print(msgHeader + "Exited main loop.")
 
 			# Stop agents.
