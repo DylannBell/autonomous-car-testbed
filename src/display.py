@@ -17,7 +17,7 @@ class Display():
         self.DEBUG = False
 
         pygame.init()
-        self.screen = pygame.display.set_mode((DISPLAY_WIDTH, DISPLAY_HEIGHT), pygame.FULLSCREEN)
+        self.screen = pygame.display.set_mode((DISPLAY_WIDTH, DISPLAY_HEIGHT))
         self.background_image = None
         self.default_text_position = (DISPLAY_WIDTH / 1.5, DISPLAY_HEIGHT / 1.2)
         self.font_general = pygame.font.SysFont('Arial', int(DISPLAY_WIDTH / 50)) # Font for general text

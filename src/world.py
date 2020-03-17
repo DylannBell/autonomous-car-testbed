@@ -26,7 +26,7 @@ class World():
 			if not updated:
 				known_vehicle.position = None
 				known_vehicle.orientation = None
-		print(self.world_data)
+		#print(self.world_data)
 
 	def get_world_data(self):
 		return dict(self.world_data)
