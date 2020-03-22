@@ -26,9 +26,9 @@ if __name__ == "__main__":
 
 		# Run timing
 		if args[1] == "timing":
-                        timing = True
-                        timeNow = datetime.datetime.now()
-                        filename = "logs/timing" + str(timeNow) + ".txt"
+            timing = True
+            timeNow = datetime.datetime.now()
+            filename = "logs/timing" + str(timeNow) + ".txt"
 		
 		if args[1] == "nogui":
 			assert(len(args) == 3), "Please add a single car number!"
@@ -179,7 +179,7 @@ if __name__ == "__main__":
 			# Start agents.
 			print(msgHeader + "Starting agents.")
 			for agent in agents:
-					agent.start()
+				agent.start()
 			dt = datetime.datetime(2019, 1, 1)
 			dt_time = dt.now().time() # Get current time
 			start_time = datetime.timedelta(seconds=dt_time.second, milliseconds=dt_time.microsecond/1000, 
@@ -234,12 +234,13 @@ if __name__ == "__main__":
 				# Time update agents
 				startTimeAgent = datetime.datetime.now()
 				for agent in agents:
-						agent.update_world_knowledge(world.get_world_data())
+					agent.update_world_knowledge(world.get_world_data())
 				now = datetime.datetime.now()
 				s += "\nAgent time : "
 				s += str((now - startTimeAgent).total_seconds())
 
 				# Do timing
+                updates += 1
 				if timing:
 					print (s)
 					endTime = datetime.datetime.now()
@@ -248,21 +249,16 @@ if __name__ == "__main__":
 					timingFile.write(s)
 					s= ""
 					if updates == 100:
-							now = datetime.datetime.now()
-							s += "\nTiming Finish: 100 Laps : "
-							totalTime = (now - start).total_seconds()
-							s += str(totalTime)
-							averageTime = totalTime / 100
-							s += "\nAverage Frame Time: "
-							s += str(averageTime)
-							timingFile.write(s)
-							timing = False
-
-							
-										
-
-				updates += 1
-
+                        now = datetime.datetime.now()
+                        s += "\nTiming Finish: 100 Laps : "
+                        totalTime = (now - start).total_seconds()
+                        s += str(totalTime)
+                        averageTime = totalTime / 100
+                        s += "\nAverage Frame Time: "
+                        s += str(averageTime)
+                        timingFile.write(s)
+                        timing = False							
+				
 			print(msgHeader + "Exited main loop.")
 
 			# Stop agents.
