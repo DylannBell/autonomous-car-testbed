@@ -216,8 +216,10 @@ class Agent():
 							self.vehicle.police_siren_on()
 
 def import_file(full_name, path):
-	from importlib import util
-	spec = util.spec_from_file_location(full_name, path)
-	mod = util.module_from_spec(spec)
-	spec.loader.exec_module(mod)
-	return mod
+        print (full_name)
+        print (path)
+        from importlib import util
+        spec = util.spec_from_file_location(full_name, path)
+        mod = util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        return mod

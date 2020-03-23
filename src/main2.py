@@ -11,6 +11,9 @@ import math
 import csv
 import os
 from constants import *
+from os import listdir
+from os.path import isfile
+import pygame
 
 
 if __name__ == "__main__":
@@ -74,7 +77,7 @@ if __name__ == "__main__":
                 maps = []
                 for folder in listdir(MAPS_DIR):
                     print (folder)
-                folder = "something" #### HERE
+                folder = "map_default"
                 if not isfile(folder):
                     map = {}
                     width, height = None, None
@@ -101,8 +104,7 @@ if __name__ == "__main__":
                         maps.append(map)
 
                 if not maps:
-                    print(msgHeader + "Error: No maps in the map folder.")
-                    return False
+                    print(msgHeader + "Error: No maps in the map")
 
                 ## scenario_config variables
                 cars = []
@@ -110,7 +112,7 @@ if __name__ == "__main__":
                                 "Colour": "red",
                                 "Type": "Robot",
                                 "Vehicle": "Car",
-                                "Strategy": "strategy_passive.py",
+                                "Strategy": "strategies/strategy_passive.py",
                                 "Enabled": True})
                 
                 scenario_config = {}
