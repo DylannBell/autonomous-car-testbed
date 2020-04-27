@@ -1,0 +1,407 @@
+
+Car locations time : 0.00404
+Lap time : 7e-05
+Display time : 0.185027
+Agent time : 0.000115Timing update lap 0 complete.
+Car locations time : 0.001454
+Lap time : 2.7e-05
+Display time : 0.180901
+Agent time : 0.000125Timing update lap 1 complete.
+Car locations time : 0.001623
+Lap time : 5.3e-05
+Display time : 0.179154
+Agent time : 8.9e-05Timing update lap 2 complete.
+Car locations time : 0.001437
+Lap time : 3e-05
+Display time : 0.179219
+Agent time : 6.5e-05Timing update lap 3 complete.
+Car locations time : 0.002002
+Lap time : 3.4e-05
+Display time : 0.220186
+Agent time : 6.3e-05Timing update lap 4 complete.
+Car locations time : 0.001259
+Lap time : 3.3e-05
+Display time : 0.203795
+Agent time : 0.000118Timing update lap 5 complete.
+Car locations time : 0.002354
+Lap time : 3.7e-05
+Display time : 0.192577
+Agent time : 6.3e-05Timing update lap 6 complete.
+Car locations time : 0.002333
+Lap time : 9e-05
+Display time : 0.192267
+Agent time : 6.1e-05Timing update lap 7 complete.
+Car locations time : 0.001285
+Lap time : 2.7e-05
+Display time : 0.194396
+Agent time : 6.6e-05Timing update lap 8 complete.
+Car locations time : 0.001288
+Lap time : 2.7e-05
+Display time : 0.194221
+Agent time : 0.000141Timing update lap 9 complete.
+Car locations time : 0.002203
+Lap time : 3.5e-05
+Display time : 0.202747
+Agent time : 6.4e-05Timing update lap 10 complete.
+Car locations time : 0.001282
+Lap time : 2.7e-05
+Display time : 0.192896
+Agent time : 7.7e-05Timing update lap 11 complete.
+Car locations time : 0.001265
+Lap time : 2.6e-05
+Display time : 0.194179
+Agent time : 0.000129Timing update lap 12 complete.
+Car locations time : 0.001507
+Lap time : 3.1e-05
+Display time : 0.195879
+Agent time : 0.000159Timing update lap 13 complete.
+Car locations time : 0.00243
+Lap time : 2.8e-05
+Display time : 0.201412
+Agent time : 8.1e-05Timing update lap 14 complete.
+Car locations time : 0.002169
+Lap time : 2.9e-05
+Display time : 0.209159
+Agent time : 0.000108Timing update lap 15 complete.
+Car locations time : 0.002124
+Lap time : 3.5e-05
+Display time : 0.186827
+Agent time : 6.5e-05Timing update lap 16 complete.
+Car locations time : 0.001383
+Lap time : 2.7e-05
+Display time : 0.184476
+Agent time : 0.00016Timing update lap 17 complete.
+Car locations time : 0.002246
+Lap time : 2.8e-05
+Display time : 0.182917
+Agent time : 0.000104Timing update lap 18 complete.
+Car locations time : 0.00226
+Lap time : 3.1e-05
+Display time : 0.184256
+Agent time : 6.4e-05Timing update lap 19 complete.
+Car locations time : 0.001365
+Lap time : 3e-05
+Display time : 0.183094
+Agent time : 6.9e-05Timing update lap 20 complete.
+Car locations time : 0.001744
+Lap time : 3.8e-05
+Display time : 0.18451
+Agent time : 7.7e-05Timing update lap 21 complete.
+Car locations time : 0.001616
+Lap time : 3.1e-05
+Display time : 0.186172
+Agent time : 6.8e-05Timing update lap 22 complete.
+Car locations time : 0.002147
+Lap time : 2.7e-05
+Display time : 0.184794
+Agent time : 9.8e-05Timing update lap 23 complete.
+Car locations time : 0.002057
+Lap time : 2.7e-05
+Display time : 0.183408
+Agent time : 6.6e-05Timing update lap 24 complete.
+Car locations time : 0.001292
+Lap time : 2.6e-05
+Display time : 0.184645
+Agent time : 0.00019Timing update lap 25 complete.
+Car locations time : 0.002277
+Lap time : 2.9e-05
+Display time : 0.182912
+Agent time : 0.00013Timing update lap 26 complete.
+Car locations time : 0.002149
+Lap time : 3.5e-05
+Display time : 0.183432
+Agent time : 6.8e-05Timing update lap 27 complete.
+Car locations time : 0.00137
+Lap time : 2.6e-05
+Display time : 0.182277
+Agent time : 9.4e-05Timing update lap 28 complete.
+Car locations time : 0.001945
+Lap time : 3.3e-05
+Display time : 0.184689
+Agent time : 6.1e-05Timing update lap 29 complete.
+Car locations time : 0.00148
+Lap time : 3.1e-05
+Display time : 0.185252
+Agent time : 8.8e-05Timing update lap 30 complete.
+Car locations time : 0.002045
+Lap time : 3.8e-05
+Display time : 0.1839
+Agent time : 7.7e-05Timing update lap 31 complete.
+Car locations time : 0.002079
+Lap time : 5e-05
+Display time : 0.181905
+Agent time : 7.2e-05Timing update lap 32 complete.
+Car locations time : 0.001333
+Lap time : 2.7e-05
+Display time : 0.180618
+Agent time : 0.000118Timing update lap 33 complete.
+Car locations time : 0.002387
+Lap time : 6.7e-05
+Display time : 0.180368
+Agent time : 6.6e-05Timing update lap 34 complete.
+Car locations time : 0.001383
+Lap time : 2.7e-05
+Display time : 0.18062
+Agent time : 8.8e-05Timing update lap 35 complete.
+Car locations time : 0.002361
+Lap time : 6.6e-05
+Display time : 0.180839
+Agent time : 6.9e-05Timing update lap 36 complete.
+Car locations time : 0.001368
+Lap time : 8.9e-05
+Display time : 0.182451
+Agent time : 8.3e-05Timing update lap 37 complete.
+Car locations time : 0.002469
+Lap time : 8.1e-05
+Display time : 0.180949
+Agent time : 6.4e-05Timing update lap 38 complete.
+Car locations time : 0.00137
+Lap time : 3.6e-05
+Display time : 0.180724
+Agent time : 0.000101Timing update lap 39 complete.
+Car locations time : 0.003034
+Lap time : 2.8e-05
+Display time : 0.183074
+Agent time : 0.000111Timing update lap 40 complete.
+Car locations time : 0.002401
+Lap time : 5.7e-05
+Display time : 0.204451
+Agent time : 0.000114Timing update lap 41 complete.
+Car locations time : 0.002274
+Lap time : 4.8e-05
+Display time : 0.211025
+Agent time : 7.4e-05Timing update lap 42 complete.
+Car locations time : 0.001446
+Lap time : 2.7e-05
+Display time : 0.211452
+Agent time : 0.000192Timing update lap 43 complete.
+Car locations time : 0.002348
+Lap time : 5.7e-05
+Display time : 0.197033
+Agent time : 6.6e-05Timing update lap 44 complete.
+Car locations time : 0.001615
+Lap time : 2.7e-05
+Display time : 0.208711
+Agent time : 0.000101Timing update lap 45 complete.
+Car locations time : 0.001665
+Lap time : 2.8e-05
+Display time : 0.206137
+Agent time : 6.2e-05Timing update lap 46 complete.
+Car locations time : 0.001174
+Lap time : 2.8e-05
+Display time : 0.191417
+Agent time : 0.000215Timing update lap 47 complete.
+Car locations time : 0.001819
+Lap time : 2.9e-05
+Display time : 0.201698
+Agent time : 6.3e-05Timing update lap 48 complete.
+Car locations time : 0.00198
+Lap time : 2.8e-05
+Display time : 0.199133
+Agent time : 6.7e-05Timing update lap 49 complete.
+Car locations time : 0.001405
+Lap time : 5.1e-05
+Display time : 0.19448
+Agent time : 6e-05Timing update lap 50 complete.
+Car locations time : 0.001491
+Lap time : 2.6e-05
+Display time : 0.1947
+Agent time : 6.8e-05Timing update lap 51 complete.
+Car locations time : 0.001281
+Lap time : 2.6e-05
+Display time : 0.196914
+Agent time : 7.1e-05Timing update lap 52 complete.
+Car locations time : 0.001282
+Lap time : 2.6e-05
+Display time : 0.213875
+Agent time : 0.000401Timing update lap 53 complete.
+Car locations time : 0.002949
+Lap time : 0.000113
+Display time : 0.195654
+Agent time : 7.4e-05Timing update lap 54 complete.
+Car locations time : 0.002023
+Lap time : 7.6e-05
+Display time : 0.212151
+Agent time : 6.3e-05Timing update lap 55 complete.
+Car locations time : 0.001232
+Lap time : 2.7e-05
+Display time : 0.198835
+Agent time : 7.3e-05Timing update lap 56 complete.
+Car locations time : 0.001852
+Lap time : 4.3e-05
+Display time : 0.198378
+Agent time : 7.2e-05Timing update lap 57 complete.
+Car locations time : 0.002153
+Lap time : 4.6e-05
+Display time : 0.199419
+Agent time : 7.9e-05Timing update lap 58 complete.
+Car locations time : 0.001639
+Lap time : 8.4e-05
+Display time : 0.191752
+Agent time : 7.6e-05Timing update lap 59 complete.
+Car locations time : 0.002407
+Lap time : 4.3e-05
+Display time : 0.184459
+Agent time : 8.3e-05Timing update lap 60 complete.
+Car locations time : 0.001482
+Lap time : 3.1e-05
+Display time : 0.179404
+Agent time : 7.6e-05Timing update lap 61 complete.
+Car locations time : 0.002613
+Lap time : 3.6e-05
+Display time : 0.215186
+Agent time : 9.8e-05Timing update lap 62 complete.
+Car locations time : 0.001375
+Lap time : 3.2e-05
+Display time : 0.218894
+Agent time : 7.7e-05Timing update lap 63 complete.
+Car locations time : 0.002919
+Lap time : 4.8e-05
+Display time : 0.212092
+Agent time : 6.3e-05Timing update lap 64 complete.
+Car locations time : 0.001249
+Lap time : 2.7e-05
+Display time : 0.211438
+Agent time : 6.7e-05Timing update lap 65 complete.
+Car locations time : 0.00281
+Lap time : 4.7e-05
+Display time : 0.196978
+Agent time : 0.000136Timing update lap 66 complete.
+Car locations time : 0.00265
+Lap time : 5.2e-05
+Display time : 0.206265
+Agent time : 0.000111Timing update lap 67 complete.
+Car locations time : 0.001317
+Lap time : 2.8e-05
+Display time : 0.202427
+Agent time : 6.9e-05Timing update lap 68 complete.
+Car locations time : 0.001178
+Lap time : 2.7e-05
+Display time : 0.196666
+Agent time : 6.7e-05Timing update lap 69 complete.
+Car locations time : 0.001486
+Lap time : 2.9e-05
+Display time : 0.196331
+Agent time : 6.5e-05Timing update lap 70 complete.
+Car locations time : 0.001495
+Lap time : 2.7e-05
+Display time : 0.19166
+Agent time : 7.7e-05Timing update lap 71 complete.
+Car locations time : 0.001242
+Lap time : 2.7e-05
+Display time : 0.196279
+Agent time : 7.3e-05Timing update lap 72 complete.
+Car locations time : 0.001973
+Lap time : 2.7e-05
+Display time : 0.194905
+Agent time : 0.000164Timing update lap 73 complete.
+Car locations time : 0.001484
+Lap time : 2.8e-05
+Display time : 0.210054
+Agent time : 6.3e-05Timing update lap 74 complete.
+Car locations time : 0.004535
+Lap time : 3.3e-05
+Display time : 0.18125
+Agent time : 7.8e-05Timing update lap 75 complete.
+Car locations time : 0.002008
+Lap time : 3.9e-05
+Display time : 0.177324
+Agent time : 0.000103Timing update lap 76 complete.
+Car locations time : 0.001725
+Lap time : 4.6e-05
+Display time : 0.1844
+Agent time : 7.7e-05Timing update lap 77 complete.
+Car locations time : 0.001421
+Lap time : 3.1e-05
+Display time : 0.177101
+Agent time : 0.000116Timing update lap 78 complete.
+Car locations time : 0.001788
+Lap time : 2.7e-05
+Display time : 0.179263
+Agent time : 0.000104Timing update lap 79 complete.
+Car locations time : 0.00179
+Lap time : 4.2e-05
+Display time : 0.178287
+Agent time : 0.000114Timing update lap 80 complete.
+Car locations time : 0.001667
+Lap time : 4.8e-05
+Display time : 0.177819
+Agent time : 0.000149Timing update lap 81 complete.
+Car locations time : 0.002084
+Lap time : 2.6e-05
+Display time : 0.176844
+Agent time : 6.1e-05Timing update lap 82 complete.
+Car locations time : 0.001175
+Lap time : 2.7e-05
+Display time : 0.194143
+Agent time : 6.9e-05Timing update lap 83 complete.
+Car locations time : 0.00123
+Lap time : 2.8e-05
+Display time : 0.182869
+Agent time : 8.5e-05Timing update lap 84 complete.
+Car locations time : 0.001946
+Lap time : 4.6e-05
+Display time : 0.177335
+Agent time : 6.5e-05Timing update lap 85 complete.
+Car locations time : 0.001251
+Lap time : 2.6e-05
+Display time : 0.180749
+Agent time : 0.000106Timing update lap 86 complete.
+Car locations time : 0.001725
+Lap time : 2.9e-05
+Display time : 0.179182
+Agent time : 7.1e-05Timing update lap 87 complete.
+Car locations time : 0.001293
+Lap time : 2.7e-05
+Display time : 0.180439
+Agent time : 0.0001Timing update lap 88 complete.
+Car locations time : 0.001983
+Lap time : 2.9e-05
+Display time : 0.178948
+Agent time : 6.9e-05Timing update lap 89 complete.
+Car locations time : 0.00126
+Lap time : 2.9e-05
+Display time : 0.178218
+Agent time : 8.8e-05Timing update lap 90 complete.
+Car locations time : 0.001461
+Lap time : 2.9e-05
+Display time : 0.180528
+Agent time : 7.9e-05Timing update lap 91 complete.
+Car locations time : 0.001482
+Lap time : 3.2e-05
+Display time : 0.180107
+Agent time : 0.000117Timing update lap 92 complete.
+Car locations time : 0.001724
+Lap time : 6.2e-05
+Display time : 0.181579
+Agent time : 7.2e-05Timing update lap 93 complete.
+Car locations time : 0.001807
+Lap time : 4.8e-05
+Display time : 0.183681
+Agent time : 0.000129Timing update lap 94 complete.
+Car locations time : 0.001853
+Lap time : 4.2e-05
+Display time : 0.180003
+Agent time : 0.000103Timing update lap 95 complete.
+Car locations time : 0.001673
+Lap time : 6.5e-05
+Display time : 0.185811
+Agent time : 0.0001Timing update lap 96 complete.
+Car locations time : 0.001422
+Lap time : 2.6e-05
+Display time : 0.196426
+Agent time : 7.2e-05Timing update lap 97 complete.
+Car locations time : 0.001308
+Lap time : 2.7e-05
+Display time : 0.188816
+Agent time : 8.3e-05Timing update lap 98 complete.
+Car locations time : 0.001894
+Lap time : 4.1e-05
+Display time : 0.216126
+Agent time : 0.000255Timing update lap 99 complete.
+Car locations time : 0.001743
+Lap time : 9.6e-05
+Display time : 0.211816
+Agent time : 9.8e-05Timing update lap 100 complete.
+Timing Finish: 100 Laps : 19.684997
+Average Frame Time: 0.19684996999999999
